@@ -1,0 +1,1198 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>131/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 27 19:11:20 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>3119 seconds (3119733 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_Criteo_SDK_config_app_Call_for_EXEMPT()'><b>Verify_Criteo_SDK_config_app_Call_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_Criteo_SDK_config_app_Call_for_EXEMPT(EXEMPT_Run.java:325)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1255708407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1255708407'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_Criteo_SDK_config_app_Call_for_EXEMPT(EXEMPT_Run.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_CO()'><b>Verify_Criteo_SDK_config_app_Call_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_CO(LATAM_CO_Run.java:357)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1855172839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1855172839'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_CO(LATAM_CO_Run.java:357)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_DR()'><b>Verify_Criteo_SDK_config_app_Call_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_DR(LATAM_DR_Run.java:360)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1825856364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1825856364'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_DR(LATAM_DR_Run.java:360)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_PE()'><b>Verify_Criteo_SDK_config_app_Call_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_PE(LATAM_PE_Run.java:359)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace850683953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace850683953'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_Criteo_SDK_config_app_Call_for_LATAM_PE(LATAM_PE_Run.java:359)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_Criteo_SDK_config_app_Call_for_LGPD()'><b>Verify_Criteo_SDK_config_app_Call_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LGPD_Run.Verify_Criteo_SDK_config_app_Call_for_LGPD(LGPD_Run.java:356)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1451450159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1451450159'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LGPD_Run.Verify_Criteo_SDK_config_app_Call_for_LGPD(LGPD_Run.java:356)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_Criteo_SDK_config_app_Call_for_Serbia()'><b>Verify_Criteo_SDK_config_app_Call_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_Criteo_SDK_config_app_Call_for_Serbia(SerbiaPrivacyTest.java:382)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2137741298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2137741298'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_Criteo_SDK_config_app_Call_for_Serbia(SerbiaPrivacyTest.java:382)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.preConditionsTest_for_EXEMPT()'><b>preConditionsTest_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.EXEMPT_Run.preConditionsTest_for_EXEMPT(EXEMPT_Run.java:119)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1569908962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1569908962'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.EXEMPT_Run.preConditionsTest_for_EXEMPT(EXEMPT_Run.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>418</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.preConditionsTest_for_LATAM_CO()'><b>preConditionsTest_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_CO_Run.preConditionsTest_for_LATAM_CO(LATAM_CO_Run.java:108)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace133775180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace133775180'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_CO_Run.preConditionsTest_for_LATAM_CO(LATAM_CO_Run.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>418</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.preConditionsTest_for_LATAM_DR()'><b>preConditionsTest_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_DR_Run.preConditionsTest_for_LATAM_DR(LATAM_DR_Run.java:110)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1294534487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1294534487'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_DR_Run.preConditionsTest_for_LATAM_DR(LATAM_DR_Run.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>417</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.preConditionsTest_for_LATAM_PE()'><b>preConditionsTest_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_PE_Run.preConditionsTest_for_LATAM_PE(LATAM_PE_Run.java:111)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace96172633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace96172633'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LATAM_PE_Run.preConditionsTest_for_LATAM_PE(LATAM_PE_Run.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>418</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.preConditionsTest_for_LGPD()'><b>preConditionsTest_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LGPD_Run.preConditionsTest_for_LGPD(LGPD_Run.java:110)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1186328673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1186328673'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.LGPD_Run.preConditionsTest_for_LGPD(LGPD_Run.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>420</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.preConditionsTest_for_Serbia()'><b>preConditionsTest_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.preConditionsTest_for_Serbia(SerbiaPrivacyTest.java:134)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace249483336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace249483336'><pre>java.lang.NullPointerException
+	at java.io.File.&lt;init&gt;(File.java:277)
+	at twc.Automation.HandleWithCharles.CharlesFunctions.archive_folder(CharlesFunctions.java:318)
+	at twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.preConditionsTest_for_Serbia(SerbiaPrivacyTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>390</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Smoke_Test_CaseVerify_Homescreen_marquee_adCall_GDPR()'><b>Smoke_Test_CaseVerify_Homescreen_marquee_adCall_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Smoke_Test_CaseVerify_Homescreen_marquee_adCall_LATAM_CO()'><b>Smoke_Test_CaseVerify_Homescreen_marquee_adCall_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Smoke_Test_CaseVerify_Homescreen_marquee_adCall_LATAM_DR()'><b>Smoke_Test_CaseVerify_Homescreen_marquee_adCall_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Smoke_Test_CaseVerify_Homescreen_marquee_adCall_LATAM_PE()'><b>Smoke_Test_CaseVerify_Homescreen_marquee_adCall_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Smoke_Test_CaseVerify_Homescreen_marquee_adCall_LGPD()'><b>Smoke_Test_CaseVerify_Homescreen_marquee_adCall_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Smoke_Test_CaseVerify_Homescreen_marquee_adCall_Serbia()'><b>Smoke_Test_CaseVerify_Homescreen_marquee_adCall_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Smoke_Test_CaseVerify_Video_adCall_GDPR()'><b>Smoke_Test_CaseVerify_Video_adCall_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Smoke_Test_CaseVerify_Video_adCall_LATAM_CO()'><b>Smoke_Test_CaseVerify_Video_adCall_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Smoke_Test_CaseVerify_Video_adCall_LATAM_DR()'><b>Smoke_Test_CaseVerify_Video_adCall_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Smoke_Test_CaseVerify_Video_adCall_LATAM_PE()'><b>Smoke_Test_CaseVerify_Video_adCall_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Smoke_Test_CaseVerify_Video_adCall_LGPD()'><b>Smoke_Test_CaseVerify_Video_adCall_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Smoke_Test_CaseVerify_Video_adCall_Serbia()'><b>Smoke_Test_CaseVerify_Video_adCall_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_Amazon_Call()'><b>Verify_Amazon_Call</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_Amazon_Call()'><b>Verify_Amazon_Call</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_Amazon_Call()'><b>Verify_Amazon_Call</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_Amazon_Call()'><b>Verify_Amazon_Call</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_Amazon_Call()'><b>Verify_Amazon_Call</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_Amazon_Call()'><b>Verify_Amazon_Call</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_Amazon_Call()'><b>Verify_Amazon_Call</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_Criteo_SDK_config_app_Call_for_GDPR()'><b>Verify_Criteo_SDK_config_app_Call_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_Criteo_SDK_inapp_v2_Call_for_EXEMPT()'><b>Verify_Criteo_SDK_inapp_v2_Call_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_Criteo_SDK_inapp_v2_Call_for_GDPR()'><b>Verify_Criteo_SDK_inapp_v2_Call_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_Criteo_SDK_inapp_v2_Call_for_LATAM_CO()'><b>Verify_Criteo_SDK_inapp_v2_Call_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_Criteo_SDK_inapp_v2_Call_for_LATAM_DR()'><b>Verify_Criteo_SDK_inapp_v2_Call_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_Criteo_SDK_inapp_v2_Call_for_LATAM_PE()'><b>Verify_Criteo_SDK_inapp_v2_Call_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_Criteo_SDK_inapp_v2_Call_for_LGPD()'><b>Verify_Criteo_SDK_inapp_v2_Call_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_Criteo_SDK_inapp_v2_Call_for_Serbia()'><b>Verify_Criteo_SDK_inapp_v2_Call_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_LocationWFXTriggers_Call__for_EXEMPT()'><b>Verify_LocationWFXTriggers_Call__for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_LocationWFXTriggers_Call__for_GDPR()'><b>Verify_LocationWFXTriggers_Call__for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_LocationWFXTriggers_Call__for_LATAM_CO()'><b>Verify_LocationWFXTriggers_Call__for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_LocationWFXTriggers_Call__for_LATAM_DR()'><b>Verify_LocationWFXTriggers_Call__for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_LocationWFXTriggers_Call__for_LATAM_PE()'><b>Verify_LocationWFXTriggers_Call__for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_LocationWFXTriggers_Call__for_LGPD()'><b>Verify_LocationWFXTriggers_Call__for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_LocationWFXTriggers_Call__for_Serbia()'><b>Verify_LocationWFXTriggers_Call__for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_Lotame_Call_for_EXEMPT()'><b>Verify_Lotame_Call_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_Lotame_Call_for_GDPR()'><b>Verify_Lotame_Call_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>1</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_Lotame_Call_for_LATAM_CO()'><b>Verify_Lotame_Call_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_Lotame_Call_for_LATAM_DR()'><b>Verify_Lotame_Call_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_Lotame_Call_for_LATAM_PE()'><b>Verify_Lotame_Call_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_Lotame_Call_for_LGPD()'><b>Verify_Lotame_Call_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_Lotame_Call_for_Serbia()'><b>Verify_Lotame_Call_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_WFXTriggers_Call_privacy_for_EXEMPT()'><b>Verify_WFXTriggers_Call_privacy_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_WFXTriggers_Call_privacy_for_GDPR()'><b>Verify_WFXTriggers_Call_privacy_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_WFXTriggers_Call_privacy_for_LATAM_CO()'><b>Verify_WFXTriggers_Call_privacy_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_WFXTriggers_Call_privacy_for_LATAM_DR()'><b>Verify_WFXTriggers_Call_privacy_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_WFXTriggers_Call_privacy_for_LATAM_PE()'><b>Verify_WFXTriggers_Call_privacy_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_WFXTriggers_Call_privacy_for_LGPD()'><b>Verify_WFXTriggers_Call_privacy_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_WFXTriggers_Call_privacy_for_Serbia()'><b>Verify_WFXTriggers_Call_privacy_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_Daily_details_adcall_for_EXEMPT()'><b>Verify_amazon_aax_Daily_details_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_Daily_details_adcall_for_GDPR()'><b>Verify_amazon_aax_Daily_details_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_Daily_details_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_Daily_details_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_Daily_details_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_Daily_details_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_Daily_details_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_Daily_details_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_Daily_details_adcall_for_LGPD()'><b>Verify_amazon_aax_Daily_details_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_Daily_details_adcall_for_Serbia()'><b>Verify_amazon_aax_Daily_details_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_Hourly1_details_adcall_for_EXEMPT()'><b>Verify_amazon_aax_Hourly1_details_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_Hourly1_details_adcall_for_GDPR()'><b>Verify_amazon_aax_Hourly1_details_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_Hourly1_details_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_Hourly1_details_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_Hourly1_details_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_Hourly1_details_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_Hourly1_details_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_Hourly1_details_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_Hourly1_details_adcall_for_LGPD()'><b>Verify_amazon_aax_Hourly1_details_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_Hourly1_details_adcall_for_Serbia()'><b>Verify_amazon_aax_Hourly1_details_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_Hourly2_details_adcall_for_EXEMPT()'><b>Verify_amazon_aax_Hourly2_details_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_Hourly2_details_adcall_for_GDPR()'><b>Verify_amazon_aax_Hourly2_details_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_Hourly2_details_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_Hourly2_details_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_Hourly2_details_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_Hourly2_details_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_Hourly2_details_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_Hourly2_details_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_Hourly2_details_adcall_for_LGPD()'><b>Verify_amazon_aax_Hourly2_details_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_Hourly2_details_adcall_for_Serbia()'><b>Verify_amazon_aax_Hourly2_details_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_Hourly3_details_adcall_for_EXEMPT()'><b>Verify_amazon_aax_Hourly3_details_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_Hourly3_details_adcall_for_GDPR()'><b>Verify_amazon_aax_Hourly3_details_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_Hourly3_details_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_Hourly3_details_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_Hourly3_details_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_Hourly3_details_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_Hourly3_details_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_Hourly3_details_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_Hourly3_details_adcall_for_LGPD()'><b>Verify_amazon_aax_Hourly3_details_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_Hourly3_details_adcall_for_Serbia()'><b>Verify_amazon_aax_Hourly3_details_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_Hourly_details_adcall_for_EXEMPT()'><b>Verify_amazon_aax_Hourly_details_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_Hourly_details_adcall_for_GDPR()'><b>Verify_amazon_aax_Hourly_details_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_Hourly_details_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_Hourly_details_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_Hourly_details_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_Hourly_details_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_Hourly_details_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_Hourly_details_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_Hourly_details_adcall_for_LGPD()'><b>Verify_amazon_aax_Hourly_details_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_Hourly_details_adcall_for_Serbia()'><b>Verify_amazon_aax_Hourly_details_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_PreRollVideo_adcall_for_EXEMPT()'><b>Verify_amazon_aax_PreRollVideo_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_PreRollVideo_adcall_for_GDPR()'><b>Verify_amazon_aax_PreRollVideo_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_PreRollVideo_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_PreRollVideo_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_PreRollVideo_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_PreRollVideo_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_PreRollVideo_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_PreRollVideo_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_PreRollVideo_adcall_for_LGPD()'><b>Verify_amazon_aax_PreRollVideo_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_PreRollVideo_adcall_for_Serbia()'><b>Verify_amazon_aax_PreRollVideo_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_feed1_adcall_for_EXEMPT()'><b>Verify_amazon_aax_feed1_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_feed1_adcall_for_GDPR()'><b>Verify_amazon_aax_feed1_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_feed1_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_feed1_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_feed1_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_feed1_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_feed1_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_feed1_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_feed1_adcall_for_LGPD()'><b>Verify_amazon_aax_feed1_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_feed1_adcall_for_Serbia()'><b>Verify_amazon_aax_feed1_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_feed2_adcall_for_EXEMPT()'><b>Verify_amazon_aax_feed2_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_feed2_adcall_for_GDPR()'><b>Verify_amazon_aax_feed2_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_feed2_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_feed2_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_feed2_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_feed2_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_feed2_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_feed2_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_feed2_adcall_for_LGPD()'><b>Verify_amazon_aax_feed2_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_feed2_adcall_for_Serbia()'><b>Verify_amazon_aax_feed2_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_feed3_adcall_for_EXEMPT()'><b>Verify_amazon_aax_feed3_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_feed3_adcall_for_GDPR()'><b>Verify_amazon_aax_feed3_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_feed3_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_feed3_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_feed3_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_feed3_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_feed3_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_feed3_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_feed3_adcall_for_LGPD()'><b>Verify_amazon_aax_feed3_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_feed3_adcall_for_Serbia()'><b>Verify_amazon_aax_feed3_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.EXEMPT_Run.Verify_amazon_aax_map_details_adcall_for_EXEMPT()'><b>Verify_amazon_aax_map_details_adcall_for_EXEMPT</b><br>Test class: twc.Automation.ExecutableTestCases.EXEMPT_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.EXEMPT_Run@38f2e97e</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.Verify_amazon_aax_map_details_adcall_for_GDPR()'><b>Verify_amazon_aax_map_details_adcall_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.Verify_amazon_aax_map_details_adcall_for_LATAM_CO()'><b>Verify_amazon_aax_map_details_adcall_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.Verify_amazon_aax_map_details_adcall_for_LATAM_DR()'><b>Verify_amazon_aax_map_details_adcall_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.Verify_amazon_aax_map_details_adcall_for_LATAM_PE()'><b>Verify_amazon_aax_map_details_adcall_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.Verify_amazon_aax_map_details_adcall_for_LGPD()'><b>Verify_amazon_aax_map_details_adcall_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.Verify_amazon_aax_map_details_adcall_for_Serbia()'><b>Verify_amazon_aax_map_details_adcall_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.preConditionsTest_for_GDPR()'><b>preConditionsTest_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>385</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.validate_NextGen_IM_call_npa_val_for_GDPR()'><b>validate_NextGen_IM_call_npa_val_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.validate_NextGen_IM_call_npa_val_for_LATAM_CO()'><b>validate_NextGen_IM_call_npa_val_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.validate_NextGen_IM_call_npa_val_for_LATAM_DR()'><b>validate_NextGen_IM_call_npa_val_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.validate_NextGen_IM_call_npa_val_for_LATAM_PE()'><b>validate_NextGen_IM_call_npa_val_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.validate_NextGen_IM_call_npa_val_for_LGPD()'><b>validate_NextGen_IM_call_npa_val_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.validate_NextGen_IM_call_npa_val_for_Serbia()'><b>validate_NextGen_IM_call_npa_val_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.GDPR_Run.validate_Video_call_npa_val_for_GDPR()'><b>validate_Video_call_npa_val_for_GDPR</b><br>Test class: twc.Automation.ExecutableTestCases.GDPR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.GDPR_Run@3e521715</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_CO_Run.validate_Video_call_npa_val_for_LATAM_CO()'><b>validate_Video_call_npa_val_for_LATAM_CO</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_CO_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_CO_Run@794b435f</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_DR_Run.validate_Video_call_npa_val_for_LATAM_DR()'><b>validate_Video_call_npa_val_for_LATAM_DR</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_DR_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_DR_Run@1144a55a</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LATAM_PE_Run.validate_Video_call_npa_val_for_LATAM_PE()'><b>validate_Video_call_npa_val_for_LATAM_PE</b><br>Test class: twc.Automation.ExecutableTestCases.LATAM_PE_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LATAM_PE_Run@323659f8</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.LGPD_Run.validate_Video_call_npa_val_for_LGPD()'><b>validate_Video_call_npa_val_for_LGPD</b><br>Test class: twc.Automation.ExecutableTestCases.LGPD_Run</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.LGPD_Run@5f8890c2</td></tr>
+<tr>
+<td title='twc.Automation.ExecutableTestCases.SerbiaPrivacyTest.validate_Video_call_npa_val_for_Serbia()'><b>validate_Video_call_npa_val_for_Serbia</b><br>Test class: twc.Automation.ExecutableTestCases.SerbiaPrivacyTest</td>
+<td></td>
+<td>0</td>
+<td>twc.Automation.ExecutableTestCases.SerbiaPrivacyTest@779dfe55</td></tr>
+</table><p>
+</body>
+</html>

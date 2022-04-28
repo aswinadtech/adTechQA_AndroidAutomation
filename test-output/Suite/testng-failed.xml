@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="twc.Automation.ExecutableTestCases.LGPD_Run">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="Verify_Criteo_SDK_config_app_Call_for_LGPD"/>
+          <include name="preConditionsTest_for_LGPD"/>
+        </methods>
+      </class> <!-- twc.Automation.ExecutableTestCases.LGPD_Run -->
+      <class name="twc.Automation.ExecutableTestCases.EXEMPT_Run">
+        <methods>
+          <include name="preConditionsTest_for_EXEMPT"/>
+          <include name="Verify_Criteo_SDK_config_app_Call_for_EXEMPT"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- twc.Automation.ExecutableTestCases.EXEMPT_Run -->
+      <class name="twc.Automation.ExecutableTestCases.LATAM_CO_Run">
+        <methods>
+          <include name="preConditionsTest_for_LATAM_CO"/>
+          <include name="beforeClass"/>
+          <include name="Verify_Criteo_SDK_config_app_Call_for_LATAM_CO"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- twc.Automation.ExecutableTestCases.LATAM_CO_Run -->
+      <class name="twc.Automation.ExecutableTestCases.SerbiaPrivacyTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Verify_Criteo_SDK_config_app_Call_for_Serbia"/>
+          <include name="preConditionsTest_for_Serbia"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- twc.Automation.ExecutableTestCases.SerbiaPrivacyTest -->
+      <class name="twc.Automation.ExecutableTestCases.LATAM_PE_Run">
+        <methods>
+          <include name="Verify_Criteo_SDK_config_app_Call_for_LATAM_PE"/>
+          <include name="preConditionsTest_for_LATAM_PE"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- twc.Automation.ExecutableTestCases.LATAM_PE_Run -->
+      <class name="twc.Automation.ExecutableTestCases.LATAM_DR_Run">
+        <methods>
+          <include name="preConditionsTest_for_LATAM_DR"/>
+          <include name="Verify_Criteo_SDK_config_app_Call_for_LATAM_DR"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- twc.Automation.ExecutableTestCases.LATAM_DR_Run -->
+      <class name="twc.Automation.ExecutableTestCases.GDPR_Run">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- twc.Automation.ExecutableTestCases.GDPR_Run -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

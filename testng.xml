@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="10" name="Test">
+    <classes>
+ <class name="twc.Automation.ExecutableTestCases.GDPR_Run"/>
+         <class name="twc.Automation.ExecutableTestCases.LGPD_Run"/>
+      <class name="twc.Automation.ExecutableTestCases.CHINAPrivacyTest"/>
+         <class name="twc.Automation.ExecutableTestCases.RUSSIAPrivacyTest"/>
+      <class name="twc.Automation.ExecutableTestCases.BELARUSPrivacyTest"/>
+ <class name="twc.Automation.ExecutableTestCases.USA_CCPA_Run"/>
+<class name="twc.Automation.ExecutableTestCases.USA_Run"/>
+          <class name="twc.Automation.ExecutableTestCases.LATAM_CO_Run"/>
+          <class name="twc.Automation.ExecutableTestCases.LATAM_DR_Run"/>
+       <class name="twc.Automation.ExecutableTestCases.LATAM_PE_Run"/>
+         <class name="twc.Automation.ExecutableTestCases.EXEMPT_Run"/>
+       <class name="twc.Automation.ExecutableTestCases.SerbiaPrivacyTest"/>
+       
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
